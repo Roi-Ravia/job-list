@@ -1,7 +1,6 @@
 import React from "react";
 import "../Data/data.json";
 import FilterTags from "./FilterTags";
-// import image from "../images/account.svg";
 
 //MUI
 import Grid from "@material-ui/core/Grid";
@@ -17,12 +16,15 @@ function Job(props) {
     contract,
     location,
   } = props;
-  // console.log(image);
   return (
     <div className={featured ? "container featured-container" : "container"}>
       <Grid container direction="row" style={{ minHeight: "120px" }}>
         <Grid item md={2}>
-          <img src={__dirname + logo} className="logo" alt={company} />
+          <img
+            src={process.env.PUBLIC_URL + logo}
+            className="logo"
+            alt={company}
+          />
         </Grid>
         <Grid item md={4} xs={12}>
           <div className="info-section">
