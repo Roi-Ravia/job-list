@@ -22,6 +22,7 @@ h2 {
 
 .navbar {
   background-image: url("./images/bg-header-desktop.svg");
+  background-color: #5ba4a4;
   height: 100px;
   width: 100%;
   border-radius: 0;
@@ -30,6 +31,7 @@ h2 {
 @media (max-width: 360px) {
   .navbar {
     background-image: url("./images/bg-header-mobile.svg");
+    background-color: #5ba4a4;
     background-repeat: no-repeat;
     background-size: I;
     height: 100px;
