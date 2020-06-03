@@ -28,7 +28,7 @@ function Job(props) {
         </Grid>
         <Grid item md={4} xs={12}>
           <div className="info-section">
-            <div className="main-info" id="badges">
+            <div className="main-info badges">
               <h2 className="company">{company}</h2>
               {props.new ? <span className="new">NEW!</span> : null}
               {featured ? <span className="featured">FEATURED</span> : null}
