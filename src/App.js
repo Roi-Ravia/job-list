@@ -1,25 +1,73 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, Fragment } from "react";
+import Job from "./components/Job";
+import Navbar from "./components/Navbar";
+import FilterCard from "./components/FilterCard";
+
+import data from "../src/Data/data.json";
 
 function App() {
+  const [tags, setTags] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar />
+      <FilterCard tags={tags} setTags={setTags} />
+      <div className="app">
+        {data.map((item, index) => {
+          let role = item.role;
+          let level = item.level;
+          let languages = item.languages || [];
+          let tools = item.tools || [];
+          let requirements = [role, level, ...languages, ...tools];
+
+          //Filtering using tags array
+          let filterJobs = (arr, target) =>
+            target.every((value) => arr.includes(value));
+
+          return tags.length === 0 ? (
+            <Job
+              id={item.id}
+              key={index}
+              logo={item.logo}
+              company={item.company}
+              new={item.new}
+              featured={item.featured}
+              position={item.position}
+              role={item.role}
+              level={item.level}
+              languages={item.languages}
+              tools={item.tools}
+              postedAt={item.postedAt}
+              contract={item.contract}
+              location={item.location}
+              tags={tags}
+              setTags={setTags}
+            />
+          ) : (
+            filterJobs(requirements, tags) && (
+              <Job
+                id={item.id}
+                key={index}
+                logo={item.logo}
+                company={item.company}
+                new={item.new}
+                featured={item.featured}
+                position={item.position}
+                role={item.role}
+                level={item.level}
+                languages={item.languages}
+                tools={item.tools}
+                postedAt={item.postedAt}
+                contract={item.contract}
+                location={item.location}
+                tags={tags}
+                setTags={setTags}
+              />
+            )
+          );
+        })}
+      </div>
+    </Fragment>
   );
 }
 
