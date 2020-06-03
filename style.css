@@ -22,7 +22,7 @@ h2 {
 
 .navbar {
   /* background-color: thistle; */
-  background-image: url("%REACT_APP_BASE_URL%/images/bg-header-desktop.svg");
+  background-image: url("%REACT_APP_BASE_URL%/job-list/images/bg-header-desktop.svg");
   height: 100px;
   width: 100%;
   border-radius: 0;
