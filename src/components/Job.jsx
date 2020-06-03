@@ -22,11 +22,7 @@ function Job(props) {
     <div className={featured ? "container featured-container" : "container"}>
       <Grid container direction="row" style={{ minHeight: "120px" }}>
         <Grid item md={2}>
-          <img
-            src={process.env.PUBLIC_URL + logo}
-            className="logo"
-            alt={company}
-          />
+          <img src={__dirname + logo} className="logo" alt={company} />
         </Grid>
         <Grid item md={4} xs={12}>
           <div className="info-section">
