@@ -1,4 +1,8 @@
+/* Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+
+/* Main */
 
 html,
 body {
@@ -20,6 +24,8 @@ h2 {
   font-weight: 700;
 }
 
+/* Navigation Bar */
+
 .navbar {
   background-image: url("./images/bg-header-desktop.svg");
   background-color: #5ba4a4;
@@ -39,6 +45,8 @@ h2 {
     border-radius: 0;
   }
 }
+
+/* Jobs */
 
 .container {
   margin: 3rem auto;
@@ -60,6 +68,8 @@ h2 {
   border-left: hsl(180, 14%, 20%, 0.8) solid 6px;
 }
 
+<<<<<<< HEAD
+=======
 .filter {
   bottom: 140px;
   left: 125px;
@@ -74,6 +84,7 @@ h2 {
   display: inline-block;
 }
 
+>>>>>>> 4ac2330ab358c0e7af661b6c7fe38e77c66fa7b4
 .badges {
   padding-top: 10px;
 }
@@ -159,16 +170,45 @@ h2 {
   color: #eef6f6;
 }
 
-#tags {
-  cursor: default;
-  margin: 20px 15px;
-  padding: 0;
-  font-weight: 700;
+@media (max-width: 960px) {
+  .logo {
+    position: relative;
+    bottom: 50px;
+    height: 4rem;
+    width: 4rem;
+  }
+  .info-section {
+    position: relative;
+    top: -50px;
+    left: 20px;
+  }
+
+  .requirements-div {
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    max-width: 250px;
+  }
+
+  .requirements {
+    float: left;
+  }
 }
 
-#tags:hover {
-  background-color: #eef6f6;
-  color: #5ba4a4;
+/* Filter Card */
+
+.filter {
+  bottom: 140px;
+  left: 125px;
+  min-height: 80px;
+  width: 80%;
+  display: flex;
+  vertical-align: middle;
+}
+
+.filterTags {
+  width: 70%;
+  display: inline-block;
 }
 
 .close {
@@ -214,29 +254,19 @@ h2 {
   color: #5ba4a4;
 }
 
+#tags {
+  cursor: default;
+  margin: 20px 15px;
+  padding: 0;
+  font-weight: 700;
+}
+
+#tags:hover {
+  background-color: #eef6f6;
+  color: #5ba4a4;
+}
+
 @media (max-width: 960px) {
-  .logo {
-    position: relative;
-    bottom: 50px;
-    height: 4rem;
-    width: 4rem;
-  }
-  .info-section {
-    position: relative;
-    top: -50px;
-    left: 20px;
-  }
-
-  .requirements-div {
-    position: relative;
-    bottom: 20px;
-    left: 20px;
-    max-width: 250px;
-  }
-
-  .requirements {
-    float: left;
-  }
   #tags {
     padding-right: 9px;
   }
