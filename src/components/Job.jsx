@@ -6,6 +6,7 @@ import FilterTags from "./FilterTags";
 import Grid from "@material-ui/core/Grid";
 
 function Job(props) {
+  //Destructure data fields from json from props
   const {
     id,
     company,
@@ -16,7 +17,9 @@ function Job(props) {
     contract,
     location,
   } = props;
+
   return (
+    //style "featured" jobs
     <div className={featured ? "container featured-container" : "container"}>
       <Grid container direction="row" style={{ minHeight: "120px" }}>
         <Grid item md={2}>

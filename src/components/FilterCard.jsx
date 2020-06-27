@@ -10,6 +10,7 @@ function FilterCard(props) {
     console.log(props.tags.filter((item) => item !== event.target.name));
     props.setTags(props.tags.filter((item) => item !== event.target.name));
   };
+
   return props.tags.length > 0 ? (
     <div className="container filter">
       <div className="filterTags">
