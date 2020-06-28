@@ -68,6 +68,23 @@ h2 {
   border-left: hsl(180, 14%, 20%, 0.8) solid 6px;
 }
 
+<<<<<<< HEAD
+=======
+.filter {
+  bottom: 140px;
+  left: 125px;
+  min-height: 80px;
+  width: 80%;
+  display: flex;
+  vertical-align: middle;
+}
+
+.filterTags {
+  width: 70%;
+  display: inline-block;
+}
+
+>>>>>>> 4ac2330ab358c0e7af661b6c7fe38e77c66fa7b4
 .badges {
   padding-top: 10px;
 }
