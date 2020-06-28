@@ -32,7 +32,7 @@ h2 {
 /* Navigation Bar */
 
 .navbar {
-  background-image: url("./images/bg-header-desktop.svg");
+  background-image: url("./assets/navbar/bg-header-desktop.svg");
   background-color: #5ba4a4;
   height: 100px;
   width: 100%;
@@ -41,7 +41,7 @@ h2 {
 
 @media (max-width: 360px) {
   .navbar {
-    background-image: url("./images/bg-header-mobile.svg");
+    background-image: url("./assets/navbar/bg-header-mobile.svg");
     background-color: #5ba4a4;
     background-repeat: no-repeat;
     background-size: I;
@@ -73,7 +73,7 @@ h2 {
   border-left: hsl(180, 14%, 20%, 0.8) solid 6px;
 }
 
-<<<<<<< HEAD ======= .filter {
+.filter {
   bottom: 140px;
   left: 125px;
   min-height: 80px;
@@ -86,8 +86,7 @@ h2 {
   width: 70%;
   display: inline-block;
 }
-
->>>>>>>4ac2330ab358c0e7af661b6c7fe38e77c66fa7b4 .badges {
+.badges {
   padding-top: 10px;
 }
 

@@ -2,6 +2,7 @@ import React, { useState, Fragment } from "react";
 import Job from "./components/Job";
 import Navbar from "./components/Navbar";
 import FilterCard from "./components/FilterCard";
+import "./style.css";
 
 import data from "../src/Data/data.json";
 
