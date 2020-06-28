@@ -11,8 +11,8 @@ function App() {
   return (
     <Fragment>
       <Navbar />
-      <FilterCard tags={tags} setTags={setTags} />
-      <div className="app">
+      <div className="main-container">
+        <FilterCard tags={tags} setTags={setTags} />
         {data.map((item, index) => {
           // Destructure main variables
           let role = item.role;

@@ -24,6 +24,11 @@ h2 {
   font-weight: 700;
 }
 
+.main-container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
 /* Navigation Bar */
 
 .navbar {
@@ -68,9 +73,7 @@ h2 {
   border-left: hsl(180, 14%, 20%, 0.8) solid 6px;
 }
 
-<<<<<<< HEAD
-=======
-.filter {
+<<<<<<< HEAD ======= .filter {
   bottom: 140px;
   left: 125px;
   min-height: 80px;
@@ -84,8 +87,7 @@ h2 {
   display: inline-block;
 }
 
->>>>>>> 4ac2330ab358c0e7af661b6c7fe38e77c66fa7b4
-.badges {
+>>>>>>>4ac2330ab358c0e7af661b6c7fe38e77c66fa7b4 .badges {
   padding-top: 10px;
 }
 
