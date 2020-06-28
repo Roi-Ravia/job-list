@@ -14,6 +14,7 @@ function App() {
       <FilterCard tags={tags} setTags={setTags} />
       <div className="app">
         {data.map((item, index) => {
+          // Destructure main variables
           let role = item.role;
           let level = item.level;
           let languages = item.languages || [];
@@ -24,19 +25,20 @@ function App() {
           let filterJobs = (arr, target) =>
             target.every((value) => arr.includes(value));
 
+          //If no tag is selected, show all jobs
           return tags.length === 0 ? (
             <Job
               id={item.id}
               key={index}
+              role={role}
+              level={level}
+              languages={languages}
+              tools={tools}
               logo={item.logo}
               company={item.company}
               new={item.new}
               featured={item.featured}
               position={item.position}
-              role={item.role}
-              level={item.level}
-              languages={item.languages}
-              tools={item.tools}
               postedAt={item.postedAt}
               contract={item.contract}
               location={item.location}
@@ -44,19 +46,20 @@ function App() {
               setTags={setTags}
             />
           ) : (
+            //If a tag or more have been selected, show only filtered jobs.
             filterJobs(requirements, tags) && (
               <Job
                 id={item.id}
                 key={index}
+                role={role}
+                level={level}
+                languages={languages}
+                tools={tools}
                 logo={item.logo}
                 company={item.company}
                 new={item.new}
                 featured={item.featured}
                 position={item.position}
-                role={item.role}
-                level={item.level}
-                languages={item.languages}
-                tools={item.tools}
                 postedAt={item.postedAt}
                 contract={item.contract}
                 location={item.location}

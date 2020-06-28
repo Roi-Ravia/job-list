@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "../Data/data.json";
 
 function FilterTags(props) {
+  //When clicked, change state accordingly
   const handleClick = (event) => {
     const filtered = event.target.innerHTML.trim();
     !props.tags.includes(filtered) && props.setTags([...props.tags, filtered]);
